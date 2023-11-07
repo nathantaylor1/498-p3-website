@@ -10,7 +10,7 @@ import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
 
-  const title = "[PROJECT NAME]";;
+  const title = "StretchVR";;
 
   return (
     <>

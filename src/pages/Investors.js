@@ -3,9 +3,15 @@ import About from '../components/About'
 import '../App.css';
 
 function Home() {
+
+  const title = "Our Plan"
+  const desc = [
+    ""
+  ]
+
   return (
     <>
-      <About title="How do we make money?" desc="test test test" youtubeEmbedCode="" />
+      <About title={title} desc={desc} youtubeEmbedCode="" />
     </>
   );
 }

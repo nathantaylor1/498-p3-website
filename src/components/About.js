@@ -8,7 +8,9 @@ function About({ title, desc, youtubeEmbedCode }) {
             <div className='about-container' id='about'>
                 <div className='about-desc'>
                     <h1>{title}</h1>
-                    <p>{desc}</p>
+                    {desc.map(desc_item =>
+                        <p>{desc_item}</p>
+                    )}
                 </div>
                 {youtubeEmbedCode === "" ? (<div />) : (
                     <div className='about-video'>
