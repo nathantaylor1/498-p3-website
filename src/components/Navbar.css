@@ -49,7 +49,7 @@
 .nav-menu {
     /* Position Items */
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
     justify-content: end;
     margin-right: 2rem;
