@@ -1,0 +1,46 @@
+.about-container {
+    background-color: var(--secondary);
+    width: 100%;
+    min-height: calc(100vh - 80px - 80px);
+
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+
+    padding: 100px
+}
+
+.about-container h1, .about-container p {
+    color: var(--primary);
+    padding-bottom: 20px;
+}
+
+.about-container h1 {
+    font-size: 38px;
+}
+
+.about-container p {
+    font-size: 20px;
+}
+
+.about-container iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+}
+
+.about-video {
+    padding-top: 40px;
+    width: 100%;
+}
+
+/* Adjust for smaller screen. */
+@media screen and (max-width: 960px) {
+    .about-container h1 {
+        font-size: 30px;
+    }
+
+    .about-container p {
+        font-size: 16px;
+    }
+}

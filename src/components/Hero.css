@@ -1,0 +1,73 @@
+.hero-container {
+    /* Set Size */
+    top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+    /* Position Items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    /* Darken Background */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+.hero-container * {
+    color: #fff;
+}
+
+.hero-wrapper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-wrapper iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-container h1 {
+    font-size: 100px;
+    margin-top: -100px;
+}
+
+.hero-container p {
+    margin-top: 8px;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 50px;
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero-container h1 {
+        font-size: 50px;
+        margin-top: -100px;
+    }
+
+    .hero-container p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-wrapper {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 16/9;
+    }
+}

@@ -1,0 +1,12 @@
+.quote-container {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 100%);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container h1 {
+    text-align: center;
+    color: var(--secondary)
+}
