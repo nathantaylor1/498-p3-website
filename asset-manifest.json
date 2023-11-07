@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eecs498-p3-website/static/css/main.82e62094.css",
+    "main.js": "/eecs498-p3-website/static/js/main.c5998b5e.js",
+    "index.html": "/eecs498-p3-website/index.html",
+    "main.82e62094.css.map": "/eecs498-p3-website/static/css/main.82e62094.css.map",
+    "main.c5998b5e.js.map": "/eecs498-p3-website/static/js/main.c5998b5e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82e62094.css",
+    "static/js/main.c5998b5e.js"
+  ]
+}
