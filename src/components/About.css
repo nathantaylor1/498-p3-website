@@ -36,6 +36,10 @@
 
 /* Adjust for smaller screen. */
 @media screen and (max-width: 960px) {
+    .about-container {
+        padding: 10px
+    }
+
     .about-container h1 {
         font-size: 30px;
     }

@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     object-fit: contain;
     /* Darken Background */
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);

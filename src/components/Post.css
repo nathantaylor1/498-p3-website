@@ -45,6 +45,10 @@
 
 /* Adjust for smaller screen. */
 @media screen and (max-width: 960px) {
+    .post-container {
+        padding: 10px
+    }
+
     .post-container h1 {
         font-size: 30px;
     }
