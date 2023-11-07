@@ -9,7 +9,7 @@ function About({ title, desc, youtubeEmbedCode }) {
                 <div className='about-content'>
                     <div className='about-desc'>
                         <h1>{title}</h1>
-                        {desc.map(desc_item =>
+                        {desc.map((desc_item) =>
                             <p>{desc_item}</p>
                         )}
                     </div>
