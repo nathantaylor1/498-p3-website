@@ -10,10 +10,10 @@ function About({ title, desc, youtubeEmbedCode }) {
                     <h1>{title}</h1>
                     <p>{desc}</p>
                 </div>
-                {youtubeEmbedCode == "" ? (<div />) : (
+                {youtubeEmbedCode === "" ? (<div />) : (
                     <div className='about-video'>
                         <h1>Check it out!</h1>
-                        <iframe src={`https://www.youtube.com/embed/${youtubeEmbedCode}`}/>
+                        <iframe title="Youtube Player" src={`https://www.youtube.com/embed/${youtubeEmbedCode}`}/>
                     </div>
                 )}
             </div>
