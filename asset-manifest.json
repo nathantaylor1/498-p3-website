@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/stretchvr/static/css/main.c779ce41.css",
-    "main.js": "/stretchvr/static/js/main.0a9b8fca.js",
+    "main.js": "/stretchvr/static/js/main.a6009925.js",
     "index.html": "/stretchvr/index.html",
     "main.c779ce41.css.map": "/stretchvr/static/css/main.c779ce41.css.map",
-    "main.0a9b8fca.js.map": "/stretchvr/static/js/main.0a9b8fca.js.map"
+    "main.a6009925.js.map": "/stretchvr/static/js/main.a6009925.js.map"
   },
   "entrypoints": [
     "static/css/main.c779ce41.css",
-    "static/js/main.0a9b8fca.js"
+    "static/js/main.a6009925.js"
   ]
 }
