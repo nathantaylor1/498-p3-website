@@ -3,7 +3,7 @@ import Post from '../components/Post';
 import '../App.css';
 
 function DevBlog() {
-   
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4Kqt1mHP-8?si=YL320klFqYp2ilz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   /*
   const examplePost = {
     title: 'Title of Post',
@@ -27,7 +27,7 @@ function DevBlog() {
     title: 'Week 1 (Milestone) Dev Update',
     date: 'November 8th, 2023',
     greeting: 'Hello, StretchVR fans! We are excited to share with you some of the progress we made this week on the beginnings of our VR yoga app. We have been working hard to make StretchVR the best VR yoga experience for you.',
-    youtubeEmbedCode: '-2aNBuufcUA',
+    youtubeEmbedCode: 'v4Kqt1mHP-8',
     topics: [
       {
         title: "",
@@ -70,7 +70,6 @@ function DevBlog() {
         text: [
           "Have feedback on your experience with StretchVR?",
           "Fill out this form: https://forms.gle/vLer7QNiWCMvP4dc7",
-          "Or email us at stretchvr@gmail.com"
         ]
       },
       {

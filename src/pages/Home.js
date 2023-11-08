@@ -8,7 +8,7 @@ function Home({ title }) {
 
   return (
     <>
-      <Hero title={title} bio="Find your zen and unleash your potential with immersive and interactive yoga sessions." youtubeEmbedCode="Ay5aUabPnQU" />
+      <Hero title={title} bio="Find your zen and unleash your potential with immersive and interactive yoga sessions." youtubeEmbedCode="v4Kqt1mHP-8" />
       <Quote text="Whether you’re a beginner or a pro, StretchVR will help you achieve your fitness and wellness goals." />
       <div id='about'>
         <About title={`What is ${title}?`} desc={[
