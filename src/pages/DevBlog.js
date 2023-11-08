@@ -36,6 +36,17 @@ function DevBlog() {
         ]
       },
       {
+        title: "The idea behind StretchVR",
+        text: [
+          "The original idea behind this was as a VR dance game. The user would basically be playing a Just Dance type of game in VR. This already exists, however, so we expanded on our idea and changed it to a stretching app. The vision for this application involves sensing where the user’s hands are and using that information, along with head position, to evaluate the user’s current body position. There would be a point system with which the user would be rewarded for more accurately mirroring the desired yoga pose. In this way, users could keep track of their progress and see how they improve each time they play. ",
+          "Technical Sophistication: There are a lot of parts to this idea. Perhaps the most complicated task is to use the tools VR gives us to interpret the user’s body position.",
+          "Novelty: We were unable to find a similar XR app out there, so we believe that this is novel.",
+          "Social Impact: This app could encourage people to exercise more, and, if successful, could even be used for physical therapy in the future.",
+          "XR Emphasis: This concept would not work without XR, or at least similar body-tracking equipment. An additional advantage of VR here would be the ability to visualize zones in which users should be putting their hands during stretches.",
+          "Financial Sustainability: We plan on selling our app for fairly cheap, say $10. This will hopefully entice many users to buy into our platform. Once they’re in, we will be constantly creating and releasing new stretch/dance packs, which we would market as “additional content” and sell for additional profit."
+        ]
+      },
+      {
         title: "Here are a few of the ideas that we didn't go with:",
         text: [
           "Idea: “Educational Beat Saber",
@@ -45,17 +56,6 @@ function DevBlog() {
           "Idea: VR Educational “Lego” Game",
           "Our idea here was to create a game that allowed for interactive learning in virtual reality. The user would be given a question and have to find the “lego” pieces with the answer to that question. These pieces would come together to create something awesome and provide the user with a reward for learning. The user would be able to move around in their virtual world and hold on to these built items.",
           "The primary shortcoming of this idea was financial sustainability. Being an educational app, we did feel that we could charge a large amount of money up front. We also struggled to find the novelty in this idea, as it seems that it has been done a thousand times before.",
-        ]
-      },
-      {
-        title: "The idea behind StretchVR",
-        text: [
-          "The original idea behind this was as a VR dance game. The user would basically be playing a Just Dance type of game in VR. This already exists, however, so we expanded on our idea and changed it to a stretching app. The vision for this application involves sensing where the user’s hands are and using that information, along with head position, to evaluate the user’s current body position. There would be a point system with which the user would be rewarded for more accurately mirroring the desired yoga pose. In this way, users could keep track of their progress and see how they improve each time they play. ",
-          "Technical Sophistication: There are a lot of parts to this idea. Perhaps the most complicated task is to use the tools VR gives us to interpret the user’s body position.",
-          "Novelty: We were unable to find a similar XR app out there, so we believe that this is novel.",
-          "Social Impact: This app could encourage people to exercise more, and, if successful, could even be used for physical therapy in the future.",
-          "XR Emphasis: This concept would not work without XR, or at least similar body-tracking equipment. An additional advantage of VR here would be the ability to visualize zones in which users should be putting their hands during stretches.",
-          "Financial Sustainability: We plan on selling our app for fairly cheap, say $10. This will hopefully entice many users to buy into our platform. Once they’re in, we will be constantly creating and releasing new stretch/dance packs, which we would market as “additional content” and sell for additional profit."
         ]
       },
       {
