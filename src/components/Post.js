@@ -14,10 +14,12 @@ function Post({ post }) {
                         <iframe title="Youtube Player" src={`https://www.youtube.com/embed/${post.youtubeEmbedCode}`}/>
                     </div>
                     <ul className='post-topics'>
-                        {post.topics.map(topic =>
+                        {post.topics.map((topic) =>
                             <li key={topic.id} className='post-topic'>
                                 <h1>{topic.title}</h1>
-                                <p>{topic.text}</p>
+                                <p>{topic.text.map((text) =>
+                                    <p>{text}</p>
+                                )}</p>
                             </li> 
                         )}
                     </ul>
