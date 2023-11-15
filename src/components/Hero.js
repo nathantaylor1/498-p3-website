@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './Hero.css';
+import videoBg from '../videos/background.mp4'
 
 function Hero({ title, bio, youtubeEmbedCode }) {
 
@@ -8,14 +9,12 @@ function Hero({ title, bio, youtubeEmbedCode }) {
         <>
             <div className='hero-container'>
                 <div className='hero-wrapper'>
-                    <iframe
-                        title="Youtube Player"
-                        src={`https://www.youtube.com/embed/${youtubeEmbedCode}?playlist=${youtubeEmbedCode}&amp;loop=1&amp;mute=1&amp;autoplay=1&amp;controls=0`}
-                        frameBorder="0"
-                    />
+                    <video src={videoBg} autoPlay loop muted />
                 </div>
-                <h1>{title}</h1>
-                <p>{bio}</p>
+                <div className='hero-content'>
+                    <h1>{title}</h1>
+                    <p>{bio}</p>
+                </div>
             </div>
         </>
     );
