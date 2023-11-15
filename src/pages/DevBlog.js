@@ -30,7 +30,7 @@ function DevBlog({ title }) {
     title: 'Week 2 (Milestone 2) Dev Update',
     date: 'November 15th, 2023',
     greeting: 'Hello, StretchVR fans! Our big focus this week was on improving the user experience of keeping track of the orbs and your hands.',
-    youtubeEmbedCode: '',
+    youtubeEmbedCode: 'Org7tP3PhjE',
     topics: [
       {
         title: "Mirror",

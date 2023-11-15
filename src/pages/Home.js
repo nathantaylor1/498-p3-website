@@ -10,7 +10,10 @@ function Home({ title }) {
   return (
     <>
       <div id="home">
-        <Hero title={title} bio="Find your zen and unleash your potential with immersive and interactive yoga sessions." youtubeEmbedCode="v4Kqt1mHP-8" />
+        <Hero 
+          title={title}
+          bio="Find your zen and unleash your potential with immersive and interactive yoga sessions."
+        />
       </div>
       <Quote 
         text="Whether you’re a beginner or a pro, StretchVR will help you achieve your fitness and wellness goals." 

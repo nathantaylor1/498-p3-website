@@ -1,15 +1,13 @@
 import React from 'react';
 import '../App.css';
 import './Hero.css';
-import videoBg from '../videos/background.mp4'
-
-function Hero({ title, bio, youtubeEmbedCode }) {
+function Hero({ title, bio }) {
 
     return (
         <>
             <div className='hero-container'>
                 <div className='hero-wrapper'>
-                    <video src={videoBg} autoPlay loop muted />
+                    <video src={process.env.PUBLIC_URL + `/videos/background.mp4`} autoPlay loop muted />
                 </div>
                 <div className='hero-content'>
                     <h1>{title}</h1>
