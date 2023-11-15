@@ -28,17 +28,46 @@ function DevBlog({ title }) {
   const post2 = {
     title: 'Week 2 (Milestone 2) Dev Update',
     date: 'November 15th, 2023',
-    greeting: 'Hello, StretchVR fans!',
+    greeting: 'Hello, StretchVR fans! Our big focus this week was on improving the user experience of keeping track of the orbs and your hands.',
     youtubeEmbedCode: '',
     topics: [
       {
+        title: "Mirror",
+        img: "",
+        text: [
+          "We were able to create a mirror using the SceneCapture2d object. This is very similar to a camera, but allows for images to be easily transformed into a material using textures. This allowed us to put what the camera is seeing onto a material, which we then broadcasted on a plane/screen in front of the player. This gave us an interesting mirror effect.",
+          "By positioning the camera behind the player, the image displayed properly mirrors their movements in a way that is easy to grasp.",
+          "We tried using regular reflective materials, but found they did not look quite right and were difficult to use. They also had a high computation to quality ratio, slowing down the game when the mirror was too large."
+        ]
+      },
+      {
+        title: "Head, Shoulders, Knees and Toes",
+        img: "",
+        text: [
+          "Now that the player could see themselves in the mirror, we wanted to add more clarity to what they would see. We thought about adding a full body model, but decided that this would add unnecessary noise and make it harder for the user to interact with the mirror.",
+          "Instead, we needed to make their hands more obvious and contrast with the orbs to easily track where their hands are compared to the orbs.",
+          "We did this by implementing an outline highlighting system using Unreal Engine’s Custom Depth variable. This variable allows objects of our choice to be a part of a specific post processing depth pass. The outline works by creating offsets of the object, up down left right, and using a Post Processing Volume to emit color in the difference between the original actor and its offsets. In order for the object to show up in the mirror, the SceneCapture2d object had to be set to a specific capture setting that gets colors after post processing. Due to some quirk of the SceneCaptured2d object, the outline color changes and gets bigger in the mirror. This still works as the online on your hands is not as important as the one in the mirror, so we made the outline a small red outline in reality that turns into a larger yellowish outline in the mirror."
+        ]
+      },
+      {
+        title: "Color Changing Orbs",
+        img: "p3_milestone2.jpg",
+        text: [
+          "During playtesting, we discovered that players found it difficult to percieve depth within the mirror. This is due to the way that the SceneCapture2d captures the scene and displays it on a flat plane. The mirror only shows the z and y direction, and we found players constantly looking at their hands as they lost the x direction compared to the orb.",
+          "The solution that we came up with was to change the hue of the orbs depending on the direction in the X plane that you need to move your hand. The orb turns orange if the orb is behind your hand (-x direction), and it turns purple if the orb is in front of your hand (+x direction).",
+          "We thought that this mechanic might be a little confusing, so we explain this in a quick text box before the user starts playing, and have so far found it to be fairly intuitive once you associate color with direction."
+        ]
+      },
+      {
         title: "",
+        img: "",
         text: [
           "",
         ]
       },
       {
         title: "Thank you!",
+        img: "",
         text: [
           "We hope you are looking forward to trying out these features in StretchVR. We are still in early development, so we appreciate your feedback and suggestions. Please let us know what you think and what you would like to see in StretchVR. Thank you for your support and stay tuned for more updates."
         ]
@@ -54,12 +83,14 @@ function DevBlog({ title }) {
     topics: [
       {
         title: "",
+        img: "",
         text: [
           "This week consisted mostly of planning and fleshing out a basic version of the project. Our main difficulties came with deciding on an idea to proceed with, especially considering the requirements of our project. We had several ideas that we wanted to use, but after doing some research we decided to move forward with one of our first ideas, StretchVR.",
         ]
       },
       {
         title: "The idea behind StretchVR",
+        img: "",
         text: [
           "The original idea behind this was as a VR dance game. The user would basically be playing a Just Dance type of game in VR. This already exists, however, so we expanded on our idea and changed it to a stretching app. The vision for this application involves sensing where the user’s hands are and using that information, along with head position, to evaluate the user’s current body position. There would be a point system with which the user would be rewarded for more accurately mirroring the desired yoga pose. In this way, users could keep track of their progress and see how they improve each time they play. ",
           "",
@@ -76,6 +107,7 @@ function DevBlog({ title }) {
       },
       {
         title: "Here are a few of the ideas that we didn't go with:",
+        img: "",
         text: [
           "Idea: 'Educational Beat Saber'",
           "The idea here is to create an educational game with a reaction time aspect. We envisioned a Beat Saber type of game where blocks would rapidly fly at you, but rather than hitting all the blocks, the player would only hit “correct” blocks. For example, before each section of a game, a mathematical expression would be displayed, and the blocks would each display a different expression. The user then would want to only hit blocks equal to the original expression. This concept could also work with a variety of other subjects.",
@@ -88,6 +120,7 @@ function DevBlog({ title }) {
       },
       {
         title: "StretchVR Hand Guidance System",
+        img: "",
         text: [
           "One of the features we implemented this week is a hand guidance system that allows you to follow a path to perform guided yoga. This feature will help you learn and practice yoga poses correctly and safely. You will be able to see a virtual spheres that will guide you through the movements and show you where to place your hands.",
           "This feature will allow us to guide the player in realtime for a immersive and effective stretch. "
@@ -95,6 +128,7 @@ function DevBlog({ title }) {
       },
       {
         title: "Thank you!",
+        img: "",
         text: [
           "We hope you are looking forward to trying out these features in StretchVR. We are still in early development, so we appreciate your feedback and suggestions. Please let us know what you think and what you would like to see in StretchVR. Thank you for your support and stay tuned for more updates."
         ]

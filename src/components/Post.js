@@ -17,6 +17,9 @@ function Post({ post }) {
                         {post.topics.map((topic) =>
                             <li key={topic.id} className='post-topic'>
                                 <h1>{topic.title}</h1>
+                                {topic.img === "" ? (<></>) : (
+                                    <img src={process.env.PUBLIC_URL + `/img/${topic.img}`}></img>
+                                )}
                                 <p>{topic.text.map((text) =>
                                     <p>{text}</p>
                                 )}</p>
