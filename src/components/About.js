@@ -2,10 +2,14 @@ import React from 'react';
 import '../App.css';
 import './About.css';
 
-function About({ title, desc, youtubeEmbedCode }) {
+function About({ title, desc, youtubeEmbedCode, color }) {
+
+    let container_classname = "about-container "
+    container_classname += color
+
     return (
         <>
-            <div className='about-container'>
+            <div className={container_classname}>
                 <div className='about-content'>
                     <div className='about-desc'>
                         <h1>{title}</h1>

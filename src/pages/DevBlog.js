@@ -4,6 +4,7 @@ import '../App.css';
 import Footer from '../components/Footer';
 import Spacer from '../components/Spacer';
 
+
 function DevBlog({ title }) {
   <iframe width="560" height="315" src="https://www.youtube.com/embed/v4Kqt1mHP-8?si=YL320klFqYp2ilz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   /*
@@ -137,13 +138,12 @@ function DevBlog({ title }) {
   }
 
   return (
-    <>
+    <div className='bg-img'>
       <Post post={post2} />
-      <Spacer color="primary" />
       <Post post={post1} />
-      <Spacer color="primary" />
+      <Spacer color="none" />
       <Footer title={title} color="primary3" />
-    </>
+    </div>
   );
 }
 

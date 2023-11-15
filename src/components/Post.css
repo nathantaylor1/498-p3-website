@@ -1,5 +1,4 @@
 .post-container {
-    background-color: var(--primary);
     width: 100%;
     min-height: 100vh;
 
@@ -16,6 +15,9 @@
 .post-content {
     width: 100%;
     max-width: 1100px;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 12px;
 }
 
 .post-container h1, .post-container p {

@@ -1,5 +1,4 @@
 .about-container {
-    background-color: var(--primary);
     width: 100%;
     min-height: calc(100vh - 80px - 80px);
 
@@ -16,6 +15,10 @@
 .about-content {
     width: 100%;
     max-width: 960px;
+
+    background-color: var(--c2);
+    border-radius: 12px;
+    padding: 40px;
 
     display: flex;
     flex-direction: column;

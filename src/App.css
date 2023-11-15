@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
 
 :root {
-  --primary: #14222d;
-  --primary2: #6d859f;
-  --primary3: #46525e;
+  --primary: #22311d;
+  --primary2: #4a6741;
+  --primary3: #374f2f;
   --text_light: #fff;
   --text_dark: #000;
 }
@@ -57,9 +57,30 @@ body {
 }
 
 .primary2 {
-  --c2: var(--primary2)
+  --c2: var(--primary2);
 }
 
 .primary3 {
-  --c2: var(--primary3)
+  --c2: var(--primary3);
+}
+
+.none {
+  --c2: rgba(0,0,0,0);
+}
+
+.bg-img {
+  background-image: url(https://images.unsplash.com/photo-1525923706370-fe4287652b33?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* Set a specified height, or the minimum height for the background image */
+  width: 100%;
+  height: 100%;
+  /* Set background image to fixed (don't scroll along with the page) */
+  background-attachment: fixed;
+  /* Center the background image */
+  background-position: center;
+  /* Set the background image to no repeat */
+  background-repeat: no-repeat;
+  /* Scale the background image to be as large as possible */
+  background-size: cover;
+  /* Darken Background */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
