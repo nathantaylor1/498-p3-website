@@ -142,7 +142,7 @@ function DevBlog({ title }) {
       <Spacer color="primary" />
       <Post post={post1} />
       <Spacer color="primary" />
-      <Footer title={title} color="primary2" />
+      <Footer title={title} color="primary3" />
     </>
   );
 }
