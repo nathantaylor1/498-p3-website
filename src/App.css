@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
 :root {
-  --primary: #141414;
-  --primary2: #008080;
-  --secondary: #fff;
+  --primary: #14222d;
+  --primary2: #6d859f;
+  --primary3: #46525e;
+  --text_light: #fff;
+  --text_dark: #000;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik', 'PT Sans', sans-serif;
+  line-height: 2;
 }
 
 body {
@@ -26,4 +31,34 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+
+.up-fade {
+  position: absolute;
+  top: -80px;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, var(--c2) 100%);
+  z-index: 5;
+}
+
+.down-fade {
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, var(--c2) 100%);
+  z-index: 5;
+}
+
+.primary {
+  --c2: var(--primary)
+}
+
+.primary2 {
+  --c2: var(--primary2)
+}
+
+.primary3 {
+  --c2: var(--primary3)
 }

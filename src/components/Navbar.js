@@ -15,7 +15,7 @@ export default function Navbar({ title }) {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo'>
+                    <Link to='/#home' className='navbar-logo'>
                         <b>{title}</b><i className="fa-solid fa-vr-cardboard fa-rotate-by" />
                     </Link>
                     <div className='nav-menu-icon' onClick={handleClick}>
@@ -23,7 +23,7 @@ export default function Navbar({ title }) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <NavLink to='/' className='nav-link' onClick={closeMobileMenu}>
+                            <NavLink to='/#home' className='nav-link' onClick={closeMobileMenu}>
                                 HOME
                             </NavLink>
                         </li>
@@ -37,12 +37,6 @@ export default function Navbar({ title }) {
                         <li className='nav-item'>
                             <NavLink to='/dev-blog' className='nav-link' onClick={closeMobileMenu}>
                                 DEV BLOG
-                            </NavLink>
-                        </li>
-
-                        <li className='nav-item'>
-                            <NavLink to='/investors' className='nav-link' onClick={closeMobileMenu}>
-                                INVESTORS
                             </NavLink>
                         </li>
                     </ul>

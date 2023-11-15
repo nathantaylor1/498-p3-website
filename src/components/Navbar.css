@@ -1,11 +1,11 @@
 .navbar * {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--text_light);
 }
 
 .navbar {
     /* Set Navbar Style */
-    background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 100%);
+    background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 75%, var(--primary3) 100%);
     height: 80px;
     /* Set Navbar Position */
     top: 0;

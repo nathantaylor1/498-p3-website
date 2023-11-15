@@ -1,12 +1,26 @@
 .quote-container {
-    background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 100%);
+    background-color: var(--c2);
+    /* background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 100%); */
     padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .quote-container h1 {
     text-align: center;
-    color: var(--secondary)
+    color: var(--text_light);
+    font-size: 40px;
+}
+
+/* Adjust for smaller screen. */
+@media screen and (max-width: 960px) {
+    .quote-container {
+        padding: 25px;
+    }
+    .quote-container h1 {
+        font-size: 18px;
+    }
 }

@@ -25,7 +25,6 @@ function Post({ post }) {
                     </ul>
                 </div>
             </div>
-            <hr className='post-hr' />
         </>
     );
 }

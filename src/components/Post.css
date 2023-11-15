@@ -1,5 +1,5 @@
 .post-container {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 100%;
     min-height: 100vh;
 
@@ -7,6 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 
     padding: 100px;
 }
@@ -17,7 +19,7 @@
 }
 
 .post-container h1, .post-container p {
-    color: var(--primary);
+    color: var(--text_light);
     padding-bottom: 20px;
 }
 
@@ -31,15 +33,10 @@
 }
 
 .post-video iframe {
+    border: none;
     width: 100%;
     max-width: 960px;
     height: 100%
-}
-
-.post-hr {
-    border: 2px solid var(--primary);
-    margin: 0px 100px;
-    margin-bottom: 12px;
 }
 
 .post-container h1 {

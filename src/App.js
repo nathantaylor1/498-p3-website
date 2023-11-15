@@ -4,8 +4,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import DevBlog from './pages/DevBlog';
-import Investors from './pages/Investors';
-import Footer from './components/Footer';
 import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
@@ -19,10 +17,8 @@ function App() {
       <Navbar title={title} />
       <Routes>
         <Route path='/' exact Component={() => <Home title={title} /> }/>
-        <Route path='/dev-blog' exact Component={DevBlog} />
-        <Route path='/investors' exact Component={Investors} />
+        <Route path='/dev-blog' exact Component={() => <DevBlog title={title} />} />
       </Routes>
-      <Footer title={title} />
     </Router>
     </>
   );

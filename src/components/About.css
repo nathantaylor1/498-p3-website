@@ -1,5 +1,5 @@
 .about-container {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 100%;
     min-height: calc(100vh - 80px - 80px);
 
@@ -7,6 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 
     padding: 100px
 }
@@ -22,7 +24,7 @@
 }
 
 .about-container h1, .about-container p {
-    color: var(--primary);
+    color: var(--text_light);
     padding-bottom: 20px;
 }
 
