@@ -13,12 +13,6 @@ function Hero({ title, bio }) {
                     <h1>{title}</h1>
                     <p>{bio}</p>
                 </div>
-                {/*
-                <div className='hero-bottom'>
-                    <p>Learn more!</p>
-                    <p><i class="fa-solid fa-arrow-down" /></p>
-                </div>
-                */}
             </div>
         </>
     );

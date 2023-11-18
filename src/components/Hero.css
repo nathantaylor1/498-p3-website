@@ -18,10 +18,6 @@
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
 
-.hero-container * {
-    color: var(--text_light)
-}
-
 .hero-wrapper {
     position: absolute;
     width: 100%;
@@ -36,27 +32,19 @@
 }
 
 .hero-content {
-    padding: 20px 40px;
+    width: 100%;
+    height: 100%;
     top: 0;
     z-index: 99;
-
-    border-radius: 30px;
-    background-color: var(--primary);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white
 }
 
-.hero-bottom {
-    bottom: 25px;
-    color: var(--text_light);
-    font-size: 20px;
-    position: absolute;
-    z-index: 90;
-}
 
 .hero-container h1 {
     font-size: 64px;

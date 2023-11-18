@@ -1,5 +1,6 @@
 .about-container {
     width: 100%;
+    min-height: calc(100vh - 80px - 80px);
 
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
 
     position: relative;
 
-    padding: 20px 100px
+    padding: 100px
 }
 
 .about-content {
@@ -17,13 +18,12 @@
 
     background-color: var(--c2);
     border-radius: 12px;
-    padding: 40px 80px;
+    padding: 40px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .about-container h1, .about-container p {
@@ -43,12 +43,10 @@
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16/9;
-    border: none;
 }
 
 .about-video {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
     width: 100%;
 }
 
