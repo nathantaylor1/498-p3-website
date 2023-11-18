@@ -3,7 +3,7 @@ import '../App.css';
 import './About.css';
 import Button from './Button';
 
-function About({ title, desc, youtubeEmbedCode, button_text, color }) {
+function About({ title, desc, youtubeEmbedCode, button_text, button_link, color }) {
 
     let container_classname = "about-container "
     container_classname += color
@@ -24,7 +24,7 @@ function About({ title, desc, youtubeEmbedCode, button_text, color }) {
                         </div>
                     )}
                     {button_text === "" ? (<div />) : (
-                        <Button text={button_text} />
+                        <Button text={button_text} link={button_link} />
                     )}
                 </div>
             </div>

@@ -16,16 +16,43 @@ function DevBlog({ title }) {
       {
         title: "Topic Title 1",
         img: "",
-        text: "Blah Blah Blah"
+        text: [
+          "Blah Blah Blah"
+        ]
       },
       {
         title: "Topic Title 2",
         img: "filename.jpg",
-        text: "Blah Blah Blah"
+        text: [
+          "Blah Blah Blah"
+        ]
       },
     ]
   }
   */
+
+  const post3 = {
+    title: 'Week 3 (Alpha) Dev Update',
+    date: 'November 21st, 2023',
+    greeting: 'Greetings!',
+    youtubeEmbedCode: 'CODE',
+    topics: [
+      {
+        title: "Topic Title 1",
+        img: "",
+        text: [
+          "Blah Blah Blah"
+        ]
+      },
+      {
+        title: "Topic Title 2",
+        img: "filename.jpg",
+        text: [
+          "Blah Blah Blah"
+        ]
+      },
+    ]
+  }
 
   const post2 = {
     title: 'Week 2 (Milestone 2) Dev Update',

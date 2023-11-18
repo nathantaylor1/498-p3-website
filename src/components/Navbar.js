@@ -23,13 +23,13 @@ export default function Navbar({ title }) {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <NavLink to='/#home' className='nav-link' onClick={closeMobileMenu}>
+                            <NavLink to='/' className='nav-link' onClick={closeMobileMenu}>
                                 HOME
                             </NavLink>
                         </li>
 
                         <li className='nav-item'>
-                            <NavHashLink to='/#about' className='nav-link' onClick={closeMobileMenu}>
+                            <NavHashLink to='/about' className='nav-link' onClick={closeMobileMenu}>
                                 ABOUT
                             </NavHashLink>
                         </li>

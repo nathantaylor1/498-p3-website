@@ -26,6 +26,7 @@ function Home({ title }) {
             "A VR application that combines relaxing yoga stretches with a rhythm game to create a unique experience.",
           ]}
           button_text="Learn more!"
+          button_link="/about"
           youtubeEmbedCode="" 
           color="bg-img primary"
         />
@@ -33,7 +34,17 @@ function Home({ title }) {
             "Purchase StretchVR for $9.99, which includes beginner stretches and one virtual environment.",
             "Additional stretches and virtual environments available for purchase in the store."
           ]}
-          button_text="Coming Soon."
+          button_text=""
+          button_link=""
+          youtubeEmbedCode=""
+          color="bg-img primary"
+        />
+        <About title={`Coming Soon.`} desc={[
+            "StretchVR is currently in development. Check out our Dev Blog for information on our progress.",
+            "Feel free to contact us with any questions."
+          ]}
+          button_text="Learn More!"
+          button_link="/dev-blog"
           youtubeEmbedCode=""
           color="bg-img primary"
         />
