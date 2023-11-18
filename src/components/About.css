@@ -11,6 +11,10 @@
     padding: 20px 100px
 }
 
+.center {
+    text-align: center;
+}
+
 .about-content {
     width: 100%;
     max-width: 960px;
@@ -23,7 +27,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .about-container h1, .about-container p {

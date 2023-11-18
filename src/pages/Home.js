@@ -28,7 +28,7 @@ function Home({ title }) {
           button_text="Learn more!"
           button_link="/about"
           youtubeEmbedCode="" 
-          color="bg-img primary"
+          color="center bg-img primary"
         />
         <About title={`Pricing`} desc={[
             "Purchase StretchVR for $9.99, which includes beginner stretches and one virtual environment.",
@@ -37,7 +37,7 @@ function Home({ title }) {
           button_text=""
           button_link=""
           youtubeEmbedCode=""
-          color="bg-img primary"
+          color="center bg-img primary"
         />
         <About title={`Coming Soon.`} desc={[
             "StretchVR is currently in development. Check out our Dev Blog for information on our progress.",
@@ -46,7 +46,7 @@ function Home({ title }) {
           button_text="Learn More!"
           button_link="/dev-blog"
           youtubeEmbedCode=""
-          color="bg-img primary"
+          color="center bg-img primary"
         />
         <Spacer color='bg-img primary' />
       </div>
