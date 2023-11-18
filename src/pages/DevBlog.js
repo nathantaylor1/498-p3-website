@@ -6,7 +6,6 @@ import Spacer from '../components/Spacer';
 
 
 function DevBlog({ title }) {
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4Kqt1mHP-8?si=YL320klFqYp2ilz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   /*
   const examplePost = {
     title: 'Title of Post',
@@ -16,10 +15,12 @@ function DevBlog({ title }) {
     topics: [
       {
         title: "Topic Title 1",
+        img: "",
         text: "Blah Blah Blah"
       },
       {
         title: "Topic Title 2",
+        img: "filename.jpg",
         text: "Blah Blah Blah"
       },
     ]
@@ -29,7 +30,7 @@ function DevBlog({ title }) {
   const post2 = {
     title: 'Week 2 (Milestone 2) Dev Update',
     date: 'November 15th, 2023',
-    greeting: 'Hello, StretchVR fans! Our big focus this week was on improving the user experience of keeping track of the orbs and your hands.',
+    greeting: 'Hello, StretchVR fans! Our big focus this week was on improving the user experience of movement.',
     youtubeEmbedCode: 'Org7tP3PhjE',
     topics: [
       {
@@ -57,13 +58,6 @@ function DevBlog({ title }) {
           "During playtesting, we discovered that players found it difficult to percieve depth within the mirror. This is due to the way that the SceneCapture2d captures the scene and displays it on a flat plane. The mirror only shows the z and y direction, and we found players constantly looking at their hands as they lost the x direction compared to the orb.",
           "The solution that we came up with was to change the hue of the orbs depending on the direction in the X plane that you need to move your hand. The orb turns orange if the orb is behind your hand (-x direction), and it turns purple if the orb is in front of your hand (+x direction).",
           "We thought that this mechanic might be a little confusing, so we explain this in a quick text box before the user starts playing, and have so far found it to be fairly intuitive once you associate color with direction."
-        ]
-      },
-      {
-        title: "",
-        img: "",
-        text: [
-          "",
         ]
       },
       {
