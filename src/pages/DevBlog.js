@@ -33,22 +33,45 @@ function DevBlog({ title }) {
 
   const post3 = {
     title: 'Week 3 (Alpha) Dev Update',
-    date: 'November 21st, 2023',
-    greeting: 'Greetings!',
-    youtubeEmbedCode: 'CODE',
+    date: 'November 22nd, 2023',
+    greeting: 'Greetings! This week we focused on improving suggestions from player feedback as well as adding new content.',
+    youtubeEmbedCode: 'wyr5yVTl7wQ',
     topics: [
       {
-        title: "Topic Title 1",
+        title: "Mirror Feedback",
         img: "",
         text: [
-          "Blah Blah Blah"
+          "We recieved some interesting feedback from playtesting that the Camera based mirror had some major issues and that our solutions to these issues did not fix. Players still found depth perception in the mirror challenging and the background of the mirror confusing. Players also mentioned that it felt like having a TV screen out in the wilderness, which hurt the immersion factor.",
+          "To address this, we created hands that mirrored the player's movement and orbs that mirrored the orbs movement. We found that this addressed both of these complaints. Depth perception was made significantly easier by the fact that movements were now mirrored in 3D instead of on a 2D plane in front of the player."
         ]
       },
       {
-        title: "Topic Title 2",
-        img: "filename.jpg",
+        title: "Main Menu and Player Calibration",
+        img: "",
         text: [
-          "Blah Blah Blah"
+          "This week, we also added two new levels altogether: a menu screen and a calibration level. The menu screen was fairly basic, only consisting of a text renderer actor and two “buttons” to move to different scenes. The most difficult part of this task was registering when the user clicked on which button. To do this, we added a line trace in a menu screen manager actor which set a “pointed actor” variable. When the right trigger was pressed, we used the VRPawn blueprint to call another function in the menu screen manager that takes the player to the appropriate level based on the current pointed actor.",
+          "During playtesting, some of the players mentioned that the orbs felt to far apart or too high for them. This is something we did not consider when creating the orbs initially. We realized that we needed to have a way to adjust for the variance in sizes of people considering that stretching heavily involves reaching to a person's limits in terms of wingspan and height.",
+          "Our end goal is to have all of our poses be dynamic and based on several body measurements. For example, when the pose calls for reaching up as high as possible, we want the desired hand position to be exactly as high as the player can physically reach, no more and no less. To this end, we created a calibration system within a new level that allows the player to calibrate their wingspan, standing head height, and max arm height. These values are saved in a “Game Manager” class, a child class we created from the Game Instance class. This way, the values persist between all levels. Building the calibration system itself used very similar logic to the main menu screen - adding a line trace, detecting triggers, and calling another function to set the appropriate parameters.",
+        ]
+      },
+      {
+        title: "Creating Different Environments",
+        img: "scenes.png",
+        text: [
+          "Some user feedback we recieved this week was that we should add multiple environments to perform stretches in. They felt that this would really help the VR emphasis goal of this project. This aligned with our ideas because we wanted to make the player feel calm and collected and to help them reach a Zen state.",
+          "To implement this, we first thought about simply teleporting the player and all of the yoga 'equipment' to another point of the map. This didn't seem like a good solution because it introduced lots of weird math and potential for bugs. Our second idea was to create two different levels and use something like Unity's 'Dont Destroy On Load'. Unfortunately, this did not seem to exist in Unreal Engine. We finally decided to use Unreal's built in level streaming, which gave us a useful and simple way to switch scenes.",
+          "Unreal Engine's level streaming feature allows the player to create 'sublevels' which are essentially maps that have a location within the main 'persistent level'. We used this to create a forest area in one sublevel and a beach area in another. Then we just had to add the code to make the player able to switch sublevels. To create the levels, we learned how to use the Landscape and Foliage tools built into Unreal Engine 5.",
+          "We also adding variable lighting to these scenes, adding a day-night cycle with lights that turn on in the environment when it reaches night time. We realize the night time lights are not very immersive, so we are working to improve this in a way that fits each scene."
+        ]
+      },
+      {
+        title: "Different Stretches and Last Minute Struggles",
+        img: "",
+        text: [
+          "One of the key features we wanted to add this week was the ability for players to perform different stretches. We wanted to make the player able to select different stretches so that the player stretched different muscles during gameplay.",
+          "To implement this, the player naturally goes from one pose to another, with slow movement of the orbs to guide the player. When the player reaches the stretch position, the orbs hold in place for an amount of time, allowing the player to fully stretch before transitioning to the next pose.",
+          "We were able to get this working on one computer, but then when we pulled it onto the computer for recording we found that it no longer worked. Unfortunately we did not have enough time before release to debug and fix this issue, so we had to remove these changes for or Alpha Release rather than record a broken project.",
+          "The big take-away from this is to always leave ourselves enough time to debug before the deadline."
         ]
       },
     ]
@@ -160,6 +183,7 @@ function DevBlog({ title }) {
 
   return (
     <div className='bg-img'>
+      <Post post={post3} />
       <Post post={post2} />
       <Post post={post1} />
       <Spacer color="none" />
