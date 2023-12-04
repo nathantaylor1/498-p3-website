@@ -7,7 +7,14 @@ function Button({ text, link }) {
 
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-        let path = `${link}`; 
+        let path = `${link}`;
+
+        if (path.substring(0, 4) === "http")
+        {
+            window.location.href = path;
+            return null;
+        }
+
         navigate(path);
     }
 
