@@ -31,6 +31,45 @@ function DevBlog({ title }) {
   }
   */
 
+  const post4 = {
+    title: 'Week 4 (Gold) Dev Update',
+    date: 'December 5th, 2023',
+    greeting: 'Hey StretchVR fans! This week we were focused on polish and marketing for our upcoming showcase at the University of Michigan!',
+    youtubeEmbedCode: 'F_mLj8gCC_w' ,
+    topics: [
+      {
+        title: "Product Marketing",
+        img: "",
+        text: [
+          "This week we had a lot of focus on polishing the final product and marketing it. We decided to do our video in the style of a relaxing meditation, to really convey the sort of vibe that we are going for in our app. We created the trailer video as shown above using a combination of stock footage from pexels.com and gameplay footage. We used an AI voice generator from ElevenLabs.io, which actually turned out to have a perfect relaxing voice.",
+          "We had some feedback about the logo on our website, visitors said that it felt a little generic and could use some improvement. We reached out to an art major to see if they could make us a logo. The logo that they came up with can be seen at the end of the trailer video and on our website, it shows a person wearing a VR headset and performing yoga, which accurately describes our product."
+        ]
+      },
+      {
+        title: "Multiple Stretches and Stretch Selection",
+        img: "",
+        text: [
+          "The big feature that we added this week was the ability for the player to select from a variety of stretches. We wanted to add this feature to give the player the ability to stretch different muscles in different ways. This feature was a key part of our initial idea, and although we had some struggles with it last week, we were able to get it implemented and working well.",
+          "To implement this, the player selects from a list of poses in the UI brought up by pressing a button. Then the player will begin the pose when they are ready, with slow movement of the orbs to guide the player. When the player reaches the stretch position, the orbs hold in place for an amount of time, allowing the player to fully stretch before transitioning to the next pose."
+        ]
+      },
+      {
+        title: "Product Marketing",
+        img: "",
+        text: [
+          "We received some feedback from our last group of playtesters regarding the menu and calibration phases. They mentioned that they felt that calibration should occur as soon as the app was launched, bypassing the main menu. They also mentioned that they felt that the calibration and main menu needed some sort of ambiance to help it to feel calming. The current empty plane feels kind of alarming and not very nice, so we implemented some music and a small environment to help.",
+        ]
+      },
+      {
+        title: "Thank you all for your continued support!",
+        img: "",
+        text: [
+          "Be sure to check us out at the University of Michigan XR Showcase!"
+        ]
+      }
+    ]
+  }
+
   const post3 = {
     title: 'Week 3 (Alpha) Dev Update',
     date: 'November 22nd, 2023',
@@ -183,6 +222,7 @@ function DevBlog({ title }) {
 
   return (
     <div className='bg-img'>
+      <Post post={post4} />
       <Post post={post3} />
       <Post post={post2} />
       <Post post={post1} />
