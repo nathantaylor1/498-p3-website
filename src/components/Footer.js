@@ -15,9 +15,9 @@ function Footer({ title, color }) {
             <div className={footer_container_classname}>
                 <div className={upfade_classname} />
                 <div className='footer-thankyou'>
-                    <h1>Thank you for your interest in</h1>
+                    <h1>Thanks for your interest in</h1>
                     <div className='footer-logo'>
-                        <b>{title}</b><i className="fa-solid fa-vr-cardboard fa-rotate-by" />
+                        <b>{title}</b><img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="" />
                     </div>
                 </div>
             </div>

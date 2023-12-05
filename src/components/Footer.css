@@ -23,12 +23,16 @@
 }
 
 .footer-logo {
+    /* Position Logo */
+    margin-left: 20px;
+    display: flex;
+    justify-self: start;
+    align-items: center;
     /* Font Settings */
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
-.footer-logo i {
-    margin-left: 0.8rem;
-    font-size: 1.8rem;
-    --fa-rotate-angle: 20deg;
+.footer-logo img {
+    height: 50px;
+    padding-left: 12px;
 }

@@ -16,7 +16,7 @@ export default function Navbar({ title }) {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/#home' className='navbar-logo'>
-                        <b>{title}</b><i className="fa-solid fa-vr-cardboard fa-rotate-by" />
+                        <b>{title}</b><img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="" className='logo' />
                     </Link>
                     <div className='nav-menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

@@ -3,6 +3,11 @@
     color: var(--text_light);
 }
 
+.logo {
+    height: 50px;
+    padding-left: 12px;
+}
+
 .navbar {
     /* Set Navbar Style */
     background: linear-gradient(45deg, var(--primary) 0%, var(--primary2) 75%, var(--primary3) 100%);
