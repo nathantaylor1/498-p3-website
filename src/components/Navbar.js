@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
 import '../App.css';
 import './Navbar.css';
 
@@ -15,7 +14,7 @@ export default function Navbar({ title }) {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/#home' className='navbar-logo'>
+                    <Link to='/' className='navbar-logo'>
                         <b>{title}</b><img src={process.env.PUBLIC_URL + '/img/logo.svg'} alt="" className='logo' />
                     </Link>
                     <div className='nav-menu-icon' onClick={handleClick}>
@@ -29,9 +28,9 @@ export default function Navbar({ title }) {
                         </li>
 
                         <li className='nav-item'>
-                            <NavHashLink to='/about' className='nav-link' onClick={closeMobileMenu}>
+                            <NavLink to='/about' className='nav-link' onClick={closeMobileMenu}>
                                 ABOUT
-                            </NavHashLink>
+                            </NavLink>
                         </li>
 
                         <li className='nav-item'>
